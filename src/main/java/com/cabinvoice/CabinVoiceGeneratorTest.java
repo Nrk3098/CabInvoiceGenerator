@@ -1,10 +1,21 @@
 package com.cabinvoice;
-import com.cabinvoice.cabinVoiceGenerator;
-import org.testing.Assert;
-import org.testing.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 
 public class CabinVoiceGeneratorTest {
-    @Test
-cabinVoiceGenerator cabininvoiceGenerator = new cabinVoiceGenerator;
 
-}
+    cabinVoiceGenerator cabinvoicegenrator = new cabinVoiceGenerator();
+
+    @Test
+
+    public void TotalFare() {
+        double distance = 2.0;
+
+        int time = 5;
+
+        double result = cabinvoicegenrator.calculateFare(distance, time);
+
+        Assert.assertEquals(25, result);
+    }
+}g
