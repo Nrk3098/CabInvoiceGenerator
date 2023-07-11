@@ -18,4 +18,4 @@ public class CabinVoiceGeneratorTest {
 
         Assert.assertEquals(25, result);
     }
-}g
+}
